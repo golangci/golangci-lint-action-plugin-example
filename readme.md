@@ -29,4 +29,4 @@ This repository is an example to explain how to use [custom linters](https://gol
 
 ## Full Example
 
-The [Workflow](https://github.com/golangci/golangci-lint-action-example/blob/main/.github/workflows/basic.yml).
+The [Workflow](https://github.com/golangci/golangci-lint-action-plugin-example/blob/main/.github/workflows/basic.yml).

@@ -1,25 +1,20 @@
-run:
-  timeout: 10m
-  skip-files: []
-
-linters-settings:
-  custom:
-    example:
-      # Path to the `.so` file of the plugin
-      path: .plugins/example.so
-      # Only used for documentation purposes.
-      description: The description of the linter. Shows up when running `golangci-lint linters`.
-      # Only used for documentation purposes.
-      original-url: github.com/golangci/example-linter
+version: "2"
 
 linters:
-  disable-all: true
+  default: none
   enable:
     - example
-    - typecheck
+
+  settings:
+    custom:
+      example:
+        # Path to the `.so` file of the plugin
+        path: .plugins/example.so
+        # Only used for documentation purposes.
+        description: The description of the linter. Shows up when running `golangci-lint linters`.
+        # Only used for documentation purposes.
+        original-url: github.com/golangci/example-linter
 
 issues:
-  exclude-use-default: false
-  max-per-linter: 0
+  max-issues-per-linter: 0
   max-same-issues: 0
-

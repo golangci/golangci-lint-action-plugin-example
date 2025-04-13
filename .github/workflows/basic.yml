@@ -40,12 +40,11 @@ jobs:
           CGO_ENABLED: 1
 
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v7
         with:
-          version: v1.59.1
+          version: v2.1.1
           # The installation mode `goinstall` always uses `CGO_ENABLED=1`.
           install-mode: goinstall
-          args: --timeout=10m
 
       - name: Test
         run: go test -v -cover ./...

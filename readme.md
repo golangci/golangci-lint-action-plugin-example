@@ -19,12 +19,11 @@ This repository is an example to explain how to use [custom linters](https://gol
 
 ```yml
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3
+        uses: golangci/golangci-lint-action@v7
         with:
-          version: v1.53.2
+          version: v2.1.1
           # The installation mode `goinstall` always uses `CGO_ENABLED=1`.
           install-mode: goinstall
-          args: --timeout=5m
 ```
 
 ## Full Example
